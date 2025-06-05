@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="calculator">
+            <input disabled class="screen" id="screen" maxlength="12"></input>
+            <div id="buttons" class="buttons">
+                <button  id="" onclick="clearscreen()" class="btn" style="--bg-color:rgb(5, 106, 146);">AC</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="deletelfunction()">DEL</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('%')">%</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('/')">/</button>
+                <button id="" class="btn" onclick="calculate(7)">7</button>
+                <button id="" class="btn" onclick="calculate(8)">8</button>
+                <button id="" class="btn" onclick="calculate(9)">9</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('*')">*</button>
+                <button id="" class="btn" onclick="calculate(4)">4</button>
+                <button id="" class="btn" onclick="calculate(5)">5</button>
+                <button id="" class="btn" onclick="calculate(6)">6</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" style="line-height:1rem" onclick="addoperator('-')">-</button>
+                <button id="" class="btn" onclick="calculate(1)">1</button>
+                <button id="" class="btn" onclick="calculate(2)">2</button>
+                <button id="" class="btn" onclick="calculate(3)">3</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('+')">+</button>
+                <button id="" class="btn" onclick="calculate(0)">0</button>
+                <button id="" class="btn" onclick="calculate(
+                    '00')">00</button>
+                <button id="point"  class="btn" onclick="calculate('.')">.</button>
+                <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="solution()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="dropdown">
+  <button id="dropdownButton" class="dropbtn">Select color </button>
+  <div class="dropdown-content">
+    <a onclick="selectOption(this)" style="--bg-color:skyblue;">skyblue</a>
+    <a onclick="selectOption(this)" style="--bg-color:slategray;">slategray</a>
+    <a onclick="selectOption(this)" style="--bg-color:pink;">pink</a>
+    <a onclick="selectOption(this)" style="--bg-color:blue;">blue</a>
+<a onclick="selectOption(this)" style="--bg-color:steelblue;">steelblue</a>
+<a onclick="selectOption(this)" style="--bg-color:slategray;">slategray</a>
+<a onclick="selectOption(this)" style="--bg-color:teal;">teal</a>
+<a onclick="selectOption(this)" style="--bg-color:mediumseagreen;">mediumseagreen</a>
+<a onclick="selectOption(this)" style="--bg-color:indianred;">indianred</a>
+<a onclick="selectOption(this)" style="--bg-color:cadetblue;">cadetblue</a>
+<a onclick="selectOption(this)" style="--bg-color:darkcyan;">darkcyan</a>
+<a onclick="selectOption(this)" style="--bg-color:cornflowerblue;">cornflowerblue</a>
+<a onclick="selectOption(this)" style="--bg-color:tomato;">tomato</a>
+<a onclick="selectOption(this)" style="--bg-color:orange;">orange</a>
+<a onclick="selectOption(this)" style="--bg-color:goldenrod;">goldenrod</a>
+<a onclick="selectOption(this)" style="--bg-color:crimson;">crimson</a>
+<a onclick="selectOption(this)" style="--bg-color:darkslateblue;">darkslateblue</a>
+<a onclick="selectOption(this)" style="--bg-color:seagreen;">seagreen</a>
+<a onclick="selectOption(this)" style="--bg-color:mediumturquoise;">mediumturquoise</a>
+<a onclick="selectOption(this)" style="--bg-color:orchid;">orchid</a>
+<a onclick="selectOption(this)" style="--bg-color:peru;">peru</a>
+<a onclick="selectOption(this)" style="--bg-color:rosybrown;">rosybrown</a>
+<a onclick="selectOption(this)" style="--bg-color:firebrick;">firebrick</a>
+
+  </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

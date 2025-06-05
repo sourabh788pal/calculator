@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow-y: hidden;
+}
+.container{
+    background-color: skyblue;
+    border: 4px solid white;
+    border-radius: 4px;
+    height: 75vh;
+    max-width: 330px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    padding: 11px;
+    /* border: 1px red; */
+    border-radius: 4px;
+    background-color: white;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+}
+.calculator .screen{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+.calculator .buttons{
+    padding-top: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid powderblue; */
+}
+.calculator .buttons button{
+    height: 3rem;
+    width: 3rem;
+    margin: 4px;
+    font-size: 1.1em;
+    color: var(--bg-color);
+    font-weight: 700;
+    border: 2px solid white;
+    /* background-color: skyblue; */
+   border-radius:2px ;
+}
+
+
+
+
+
+
+.dropdown {
+      position: absolute;
+      display: inline-block;
+      top: 15px;
+      right: 50px;
+    }
+
+    .dropbtn {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 140px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      border-radius: 6px;
+      z-index: 1;
+      height: 500px;
+      overflow-x: scroll;
+      
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    .dropdown-content a:last-child {
+      border-bottom: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--bg-color);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #2980b9;
+    }
