@@ -90,11 +90,10 @@ function deletelfunction(){
     document.getElementById("container").style.backgroundColor=element.textContent;
     Array.from(document.getElementsByClassName("btn")).forEach(element => {
     element.style.backgroundColor = colorName;
-     if (colorName === 'slategray' || colorName === 'darkslateblue' || colorName === 'indianred' || colorName === 'firebrick' || colorName === 'crimson' || colorName === 'tomato'||colorName=='blue') 
        
-    {
+    
         element.style.color="white";
-    }
+    
 });
 
     console.log( document.getElementsByClassName(" btn"));
