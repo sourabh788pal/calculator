@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     height: 100vh;
@@ -11,10 +12,10 @@ body{
     overflow-y: hidden;
 }
 .container{
-    background-color: skyblue;
+    background-color: rgb(5, 35, 46);
     border: 4px solid white;
     border-radius: 4px;
-    height: 75vh;
+    height: 80vh;
     max-width: 330px;
       display: flex;
     align-items: center;
@@ -29,26 +30,33 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 80%;
+    height: 100%;
     width: 80%;
 }
 .calculator .screen{
     background-color: white;
     height: 100px;
     width: 100%;
-    border: none;
+    border: 2px solid black;
+    border-radius: 25px;
     text-align: right;
     padding: 10px;
     box-sizing: border-box;
     font-size: 2rem;
 }
 .calculator .buttons{
-    padding-top: 10px;
+    /* padding-top: 10px; */
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+    
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    width: 100%;
     /* border: 1px solid powderblue; */
+}
+.g-1,.g-2,.g-3,.g-4,.g-5{
+  display: flex;
+  
 }
 .calculator .buttons button{
     height: 3rem;
@@ -57,15 +65,10 @@ body{
     font-size: 1.1em;
     color: var(--bg-color);
     font-weight: 700;
-    border: 2px solid white;
+    border: 2px solid rgb(93, 86, 86);
     /* background-color: skyblue; */
    border-radius:2px ;
 }
-
-
-
-
-
 
 .dropdown {
       position: absolute;
@@ -75,7 +78,7 @@ body{
     }
 
     .dropbtn {
-      background-color: #3498db;
+      background-color: #052d47;
       color: white;
       padding: 12px 20px;
       font-size: 16px;
@@ -121,4 +124,27 @@ body{
 
     .dropdown:hover .dropbtn {
       background-color: #2980b9;
+    }
+
+
+    @media only screen and (min-width: 1000px){
+      .container{
+        height: 90vh;
+
+      }
+      .calculator{
+         height: 95%;
+        width: 90%;
+      }
+      .calculator .buttons button{
+        margin: 3px;
+        border-radius: 35px;
+      }
+    }
+
+    @media only screen and (max-width: 1000px){
+      .calculator .buttons button{
+        height: 2em;
+        border-radius: 30px;
+      }
     }
