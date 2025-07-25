@@ -79,6 +79,7 @@ function clearscreen(){
 function deletelfunction(){
    let newvalue= document.getElementById("screen").value.slice(0,-1);
     document.getElementById("screen").value=newvalue;
+      currentkey=newvalue;
 }
 
  function selectOption(element) {
