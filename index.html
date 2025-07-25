@@ -7,33 +7,50 @@
     <title>calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div id="container" class="container">
         <div class="calculator">
             <input disabled class="screen" id="screen" maxlength="12"></input>
             <div id="buttons" class="buttons">
-                <button  id="" onclick="clearscreen()" class="btn" style="--bg-color:rgb(5, 106, 146);">AC</button>
+               <div class="g-1">
+                 <button  id="" onclick="clearscreen()" class="btn" style="--bg-color:rgb(5, 106, 146);">AC</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="deletelfunction()">DEL</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('%')">%</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('/')">/</button>
-                <button id="" class="btn" onclick="calculate(7)">7</button>
+               </div>
+
+
+
+               <div class="g-2">
+                 <button id="" class="btn" onclick="calculate(7)">7</button>
                 <button id="" class="btn" onclick="calculate(8)">8</button>
                 <button id="" class="btn" onclick="calculate(9)">9</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('*')">*</button>
+               </div>
+
+
+
+             <div class="g-3">
                 <button id="" class="btn" onclick="calculate(4)">4</button>
                 <button id="" class="btn" onclick="calculate(5)">5</button>
                 <button id="" class="btn" onclick="calculate(6)">6</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" style="line-height:1rem" onclick="addoperator('-')">-</button>
+             </div>
+              
+
+
+             <div class="g-4">
                 <button id="" class="btn" onclick="calculate(1)">1</button>
                 <button id="" class="btn" onclick="calculate(2)">2</button>
                 <button id="" class="btn" onclick="calculate(3)">3</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="addoperator('+')">+</button>
-                <button id="" class="btn" onclick="calculate(0)">0</button>
-                <button id="" class="btn" onclick="calculate(
-                    '00')">00</button>
+             </div>
+                <div class="g-5">
+                    <button id="" class="btn" onclick="calculate(0)">0</button>
+                <button id="" class="btn" onclick="calculate('00')">00</button>
                 <button id="point"  class="btn" onclick="calculate('.')">.</button>
                 <button id="" class="btn" style="--bg-color:rgb(5, 106, 146);" onclick="solution()">=</button>
+                </div>
             </div>
         </div>
     </div>
